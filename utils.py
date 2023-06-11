@@ -29,9 +29,9 @@ special symbols: default - "!", "_", "#", "*", "-"
     def __repr__(self):
         repr_str = f"""
 Class Instance params:
-- alphabet: "{self.alphabet_lower}"
-- numbers: "{self.numbers}"
-- spec_symbols: "{self.spec_symbols}"
+- alphabet: "{"".join(sorted(self.alphabet_lower))}"
+- numbers: "{"".join(sorted(self.numbers))}"
+- spec_symbols: "{"".join(sorted(self.spec_symbols))}"
         """
 
         return repr_str
