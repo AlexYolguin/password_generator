@@ -21,10 +21,10 @@ special symbols: default - "!", "_", "#", "*", "-"
             spec_symbols: str=DEFAULT_SPEC_SYMBOLS
         ):
 
-        self.alphabet_lower = alphabet
-        self.alphabet_upper = alphabet.upper()
-        self.numbers = numbers
-        self.spec_symbols = spec_symbols
+        self.alphabet_lower = "".join(set(alphabet))
+        self.alphabet_upper = "".join(set(alphabet.upper()))
+        self.numbers = "".join(set(numbers))
+        self.spec_symbols = "".join(set(spec_symbols))
     
     def __repr__(self):
         repr_str = f"""
