@@ -1,3 +1,6 @@
+import random
+
+
 class Password_generator():
     """
 Use this class to generate password with your personal settings.
@@ -46,9 +49,6 @@ Generate your password, variables params: password_length >= 6
 
         if password_length < 6:
             raise NotImplementedError
-        
-        import random
-
 
         len_alphabet_upper = random.randint(1, password_length // 4)
         len_numbers = random.randint(1, password_length // 4)
