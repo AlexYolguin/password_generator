@@ -1,6 +1,6 @@
 # Password generator
 
-This code will help you generate password for various profiles on the internet
+This code will help you to generate password for various profiles on the internet
 
 #### The password consists of:
 
